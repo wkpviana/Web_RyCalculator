@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-with, initial-scale=1.0">
+    <title>Ry-Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calc">
+            <div class="top-text">
+                Ry-Calculator
+            </div>
+            <div class="display">
+                <input type="text" id="display">
+            </div>
+            <div>
+                <button class="large-button oprators"
+                    onclick="display.value = display.value.toString().slice(0,-1)">B.Space</button>
+                <button class="oprators" onclick="display.value = ''">CE</button>
+                <button class="oprators" onclick="display.value = eval(display.value)">=</button>
+            </div>
+            <div>
+                <button onclick="display.value += '7'">7</button>
+                <button onclick="display.value += '8'">8</button>
+                <button onclick="display.value += '9'">9</button>
+                <button class="oprators" onclick="display.value += '/'">/</button>
+            </div>
+            <div>
+                <button onclick="display.value += '4'">4</button>
+                <button onclick="display.value += '5'">5</button>
+                <button onclick="display.value += '6'">6</button>
+                <button class="oprators" onclick="display.value += '*'">*</button>
+            </div>
+            <div>
+                <button onclick="display.value += '1'">1</button>
+                <button onclick="display.value += '2'">2</button>
+                <button onclick="display.value += '3'">3</button>
+                <button class="oprators" onclick="display.value += '-'">-</button>
+            </div>
+            <div>
+                <button onclick="display.value += '00'">00</button>
+                <button onclick="display.value += '0'">0</button>
+                <button onclick="display.value += '.'">.</button>
+                <button class="oprators" onclick="display.value += '+'">+</button>
+            </div>
+            <div class="bottom-text">
+                &copy; RahimyGroup 2022
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
